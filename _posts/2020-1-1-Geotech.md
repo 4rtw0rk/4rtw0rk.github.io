@@ -2,9 +2,9 @@
 |---|---|
 | __A__   | Apabila operator mendapatkan ... |
 | __D__   | Berikut ini adalah persyaratan ... |
-| __A__   | Berikut ini merupakan infrastruktur pada saat loading di area lereng high |
-| __D__   | Berikut ini yang bukan merupakan alat untuk memonitor pergerakan          |
-| __C__   | Berikut ini yang bukan merupakan bahaya dari terjadinya longsor           |
+| __A__   | Berikut ini merupakan infrastruktur ... |
+| __D__   | Berikut ini yang bukan merupakan alat ... |
+| __C__   | Berikut ini yang bukan merupakan bahaya ... |
 | __A__   | Berikut merupakan tanda-tanda terjadinya longsoran adalah                 |
 | __D__   | Berikut yang bukan tujuan dilakukannya pemantauan pergerakan              |
 | __C__   | Jarak aman bulldozer pada saat melakukan proses dozing pada crest         |
