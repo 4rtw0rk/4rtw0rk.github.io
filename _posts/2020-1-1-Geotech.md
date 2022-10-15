@@ -1,5 +1,5 @@
-﻿| JWB | SOAL                                                                      |
-|-----|---------------------------------------------------------------------------|
+﻿| __JWB__ | __SOAL__ |
+|---|---|
 | A   | Apabila operator mendapatkan ALERT kondisi darurat telah terjadi          |
 | D   | Berikut ini adalah persyaratan khusus untuk operator dapat bekerja        |
 | A   | Berikut ini merupakan infrastruktur pada saat loading di area lereng high |
