@@ -6,15 +6,15 @@ Nama  :  Hikmah Insani
 ***
 ### 01.  Expression of greeting
 ***
-> Formal Greetings [8] 
-  1. hello
-  2. good morning
-  3. good afternoon
-  4. good evening
-  5. how do you do?
-  6. how are you?
-  7. how are you doing?
-  8. how is everything?
+Formal Greetings [8] 
+1. hello
+2. good morning
+3. good afternoon
+4. good evening
+5. how do you do?
+6. how are you?
+7. how are you doing?
+8. how is everything?
 ***
 > Informal Greetings [6]
   1. hi!
