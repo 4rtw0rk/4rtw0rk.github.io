@@ -1,4 +1,6 @@
-﻿| __A__   | Apabila operator mendapatkan ... |
+﻿| __JWB__ | __SOAL__ |
+|---|---|
+| __A__   | Apabila operator mendapatkan ... |
 |---|---|
 | __D__   | Berikut ini adalah persyaratan ... |
 | __A__   | Berikut ini merupakan  infrastruktur ... |
