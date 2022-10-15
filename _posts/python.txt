@@ -1,0 +1,19 @@
+Base functions
+print() input()
+int() fload() str() bool()
+
+Operators
+=
++ - * / %
+== != < > <= >=
+not and or
+[varbl] [Oprts] [value]
+
+Control flow
+if (cond) : <code> else : <code>
+if (cond) : <code> elif : <cond> else : <code>
+while (cond) : <code>
+for [sub-vrbl] in range(Angka1, Angka2):
+
+break
+continue
