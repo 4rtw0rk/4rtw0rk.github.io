@@ -1,4 +1,7 @@
-﻿| __JWB__ | __SOAL__ |
+﻿***
+### __Geotech__
+***
+| __Jwb__ | __Soal__ |
 |---|---|
 | __A__   | __Apabila__ operator mendapatkan ... |
 | __D__   | __Berikut__ ini adalah persyaratan ... |
