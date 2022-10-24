@@ -1,5 +1,6 @@
-xsaya   = "Muhammad Aditya", 7, "Malang"
-print("Nama Saya :", xsaya[0])
-print(xsaya)
-#print("Panggilan Saya :", xsaya[9:15])
-#print("Umur Saya", xsaya[16], "dan Tinggal di Kota "xsaya[17:19])
+xbulan = "Januari","Februari","Maret","April","Mei","Juni"," Juli","Agustus","September","Oktober","November","Desember"
+print("Pendaftaran Bulan",xbulan[9])
+xnama = input("Nama : ")
+xumur = input("Umur : ")
+xkota = input("Kota : ")
+print(">> Server << : Pendaftaran Di bulan" ,xbulan[9],"Nama ", xnama,", Umur", xumur, "Tahun , Asal Kota", xkota, "Berhasil dibuat. Terima Kasih")
