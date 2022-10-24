@@ -1,4 +1,5 @@
 BAB1
+```
 i => beralih ke insert mode
 Esc => beralih ke command mode
 :w => menyimpan berkas
@@ -11,7 +12,7 @@ l => Bergerak ke kanan satu karakter
 15j => ke bawah 15 baris
 5k => ke atas 5 baris
 4l => ke kanan 4 karakter
-
+```
 
 
 
