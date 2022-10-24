@@ -1,10 +1,10 @@
 Jika Semua Orang Menyerah Disaat Sulit, Maka Tidak Akan Ada Orang Sukses Hari Ini
 
 ### \ Pengembang \
-```
-Penemu  : Guido van Rossum 
-Asal    : Belanda
-```
+
+* Penemu  : Guido van Rossum 
+* Asal    : Belanda
+
 ### \ Pengenal [30] \
 
 * print, input
@@ -16,25 +16,25 @@ Asal    : Belanda
 * pass, raise, return, try, with, yield
 
 ### \ Operator [15] \
-```
-Penugasan       =, +=, -=, *=, /=, **=, %=
-Arithmatika     +, -, *, /, %
-Perbandingan    >, <, >=, <=, ==, !=
-Logika          not, and, or
-Bitwise         &, |, ~, ^, >>, <<
-Identitas       is, is not
-Keanggotaaan    in, not in
-```
+
+* Penugasan       =, +=, -=, *=, /=, **=, %=
+* Arithmatika     +, -, *, /, %
+* Perbandingan    >, <, >=, <=, ==, !=
+* Logika          not, and, or
+* Bitwise         &, |, ~, ^, >>, <<
+* Identitas       is, is not
+* Keanggotaaan    in, not in
+
 ### \ Jenis Data [6] \
-```
-Bilangan    : B. Bulat (Integer), B. Pecahan (Float) dan B. Gabungan (Complex).
-String      : Karakter yang dianggap Text meskipun berbentuk Angka.
-Boolean     : Data bernilai True atau False.
-List        : Tipe data berisi item yang berurut.
-Tuple       : Jenis data lain yang mirip dengan list.
-Set         : Tidak berurut(unondered).
-Dictionary  : Terdiri dari pasangan kunci-nilai (key-value)
-```
+
+* Bilangan    : B. Bulat (Integer), B. Pecahan (Float) dan B. Gabungan (Complex).
+* String      : Karakter yang dianggap Text meskipun berbentuk Angka.
+* Boolean     : Data bernilai True atau False.
+* List        : Tipe data berisi item yang berurut.
+* Tuple       : Jenis data lain yang mirip dengan list.
+* Set         : Tidak berurut(unondered).
+* Dictionary  : Terdiri dari pasangan kunci-nilai (key-value)
+
 ``` 
 xdata = 10
 x_integer = int(xdata)

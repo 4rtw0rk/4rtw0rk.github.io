@@ -1,0 +1,104 @@
+Jika Semua Orang Menyerah Disaat Sulit, Maka Tidak Akan Ada Orang Sukses Hari Ini
+
+### \ Pengembang \
+
+* Penemu  : Guido van Rossum 
+* Asal    : Belanda
+
+### \ Pengenal [30] \
+
+* print, input
+* True, False, None
+* if, elif, else
+* for, while, break, continue 
+* as, assert, class,deff, del, expert, finally,from, 
+* global, import, in, is, lambda, nonlocal, 
+* pass, raise, return, try, with, yield
+
+### \ Operator [15] \
+
+* Penugasan       =, +=, -=, *=, /=, **=, %=
+* Arithmatika     +, -, *, /, %
+* Perbandingan    >, <, >=, <=, ==, !=
+* Logika          not, and, or
+* Bitwise         &, |, ~, ^, >>, <<
+* Identitas       is, is not
+* Keanggotaaan    in, not in
+
+### \ Jenis Data [6] \
+
+* Bilangan    : B. Bulat (Integer), B. Pecahan (Float) dan B. Gabungan (Complex).
+* String      : Karakter yang dianggap Text meskipun berbentuk Angka.
+* Boolean     : Data bernilai True atau False.
+* List        : Tipe data berisi item yang berurut.
+* Tuple       : Jenis data lain yang mirip dengan list.
+* Set         : Tidak berurut(unondered).
+* Dictionary  : Terdiri dari pasangan kunci-nilai (key-value)
+
+``` 
+xdata = 10
+x_integer = int(xdata)
+x_float = float(xdata)
+x_boolean = bool(xdata)
+x_string = str(xdata)
+print(x_integer, "adalah type data : ", type(x_integer))
+print(x_float, "adalah type data : ", type(x_float))
+print(x_boolean, "adalah type data : ", type(x_boolean))
+print(x_string, "adalah type data : ", type(x_string)) 
+```
+### \ Aturan Penulisan [5] \
+```
+1. Hanya Menggunakan (a-z), (A-Z), (0-9) dan (_).
+2. Tidak boleh dimulai dengan angka.
+3. Kata kunci tidak boleh dijadikan pengenal.
+4. Karakter spesial tidak bisa sebagai pengenal.
+5. Bersifat Case Sensitive.
+```
+### \ Variabel \
+NmVrbl ... Oprt ... TpDt
+``` 
+angka_bulat = 5 
+```
+### \ Indexing dan Slicing \
+NmStr[indekx] 
+```
+xsaya   = "Muhammad Aditya"
+print("Inisial Saya :", xsaya[0], xsaya[9] )
+```
+NmStr[awal:akhir]
+```
+print("Panggilan Saya :", xsaya[9:15])
+```
+### \ List \
+namastring[list] ...
+```
+xbulan = "Januari","Februari","Maret"
+print("Pendaftaran Bulan",xbulan[1])
+xnama = input("Nama : ")
+xumur = input("Umur : ")
+xkota = input("Kota : ")
+print(">> Pendaftaran Di bulan" ,xbulan[1],
+    "\n>> Nama ", xnama,", Umur", xumur, "Tahun , Asal Kota", xkota,
+    "\n>> Berhasil dibuat. Terima Kasih")
+```
+### \ Percabangan \
+if ... elif ... else
+```
+xorang = int(input("Masukkan Angkanya : "))
+if xorang in range(100, 900):
+    print("Angkanmu Besar")
+elif xorang in range (1000, 5000):
+    print(">>", xorang, ": Angkamu Besar Sekali")
+elif xorang < 100:
+    print(">>", xorang,": Angkamu Kecil")
+else:
+    print("Salah Input. Ulangi")
+```
+### \ Perulangan \
+for NamVrbl1 OprtKeanggtn range(len(NmVrbl2)): print(NmVrbl1[NmVrbl2])
+```
+xwarna = "Pink", "Hitam", "Cokelat"
+for xdaftar in range(len(xwarna)):
+    print("Saya Tidak Suka Warna", xwarna[xdaftar])
+```
+while
