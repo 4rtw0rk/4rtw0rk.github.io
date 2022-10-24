@@ -1,4 +1,3 @@
-``` 
 a = 10
 b = 2
 xdata = 20
@@ -43,5 +42,3 @@ else:
 xwarna = "Pink", "Hitam", "Cokelat"
 for xdaftar in range(len(xwarna)):
     print("Saya Tidak Suka Warna", xwarna[xdaftar])
-
-```
