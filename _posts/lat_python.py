@@ -1,7 +1,9 @@
+# Variabel
 a = 10
 b = 2
 xdata = 20
 
+# Tipe Data Casting
 x_integer = int(xdata)
 x_float = float(xdata)
 x_boolean = bool(xdata)
@@ -11,7 +13,8 @@ print(x_float, "adalah type data : ", type(x_float))
 print(x_boolean, "adalah type data : ", type(x_boolean))
 print(x_string, "adalah type data : ", type(x_string)) 
 
-
+import os
+os.system('cls')
 
 xsaya   = "Muhammad Aditya"
 print("Inisial Saya :", xsaya[0], xsaya[9] )
