@@ -1,12 +1,16 @@
 print("---------------------------------------------------")
 print("Variabel")
 print("---------------------------------------------------")
+
 a = 10
 b = 2
 xdata = 20
-# ---------------------------------------------------
-# Tipe Data Casting
-# ---------------------------------------------------
+
+print()
+print("---------------------------------------------------")
+print("Output dan Tipe Data (Casting)")
+print("---------------------------------------------------")
+
 x_integer = int(xdata)
 x_float = float(xdata)
 x_boolean = bool(xdata)
@@ -15,29 +19,31 @@ print(x_integer, "adalah type data : ", type(x_integer))
 print(x_float, "adalah type data : ", type(x_float))
 print(x_boolean, "adalah type data : ", type(x_boolean))
 print(x_string, "adalah type data : ", type(x_string)) 
-def timeout():
-    print("Alarm!")
-t = Timer(5.0, timeout)
-t.start()
-import os
-os.system('cls')
-os.system('clear')
+
+print()
+print("---------------------------------------------------")
+print("Indexing dan Slicing")
+print("---------------------------------------------------")
 
 xsaya   = "Muhammad Aditya"
 print("Inisial Saya :", xsaya[0], xsaya[9] )
-
 print("Panggilan Saya :", xsaya[9:15])
 
+print()
+print("---------------------------------------------------")
+print("Input dan List")
+print("---------------------------------------------------")
 
 xbulan = "Januari","Februari","Maret"
-print("Pendaftaran Bulan",xbulan[1])
+print("Bulan ",xbulan[1])
 xnama = input("Nama : ")
-xumur = input("Umur : ")
-xkota = input("Kota : ")
-print(">> Pendaftaran Di bulan" ,xbulan[1],
-    "\n>> Nama ", xnama,", Umur", xumur, "Tahun , Asal Kota", xkota,
-    "\n>> Berhasil dibuat. Terima Kasih")
+print(">> Hai", xnama,"di Bulan" ,xbulan[1],
+    "\n>> Semoga Cerah dan Tetap Semangat")
 
+print()
+print("---------------------------------------------------")
+print("Percabangan")
+print("---------------------------------------------------")
 xorang = int(input("Masukkan Angkanya : "))
 if xorang in range(100, 900):
     print("Angkanmu Besar")
@@ -48,6 +54,10 @@ elif xorang < 100:
 else:
     print("Salah Input. Ulangi")
 
+print()
+print("---------------------------------------------------")
+print("Perulangan")
+print("---------------------------------------------------")
 
 xwarna = "Pink", "Hitam", "Cokelat"
 for xdaftar in range(len(xwarna)):
