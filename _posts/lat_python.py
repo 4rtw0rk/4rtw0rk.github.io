@@ -15,6 +15,7 @@ print(x_string, "adalah type data : ", type(x_string))
 
 import os
 os.system('cls')
+os.system('clear')
 
 xsaya   = "Muhammad Aditya"
 print("Inisial Saya :", xsaya[0], xsaya[9] )
