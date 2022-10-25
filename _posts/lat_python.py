@@ -1,9 +1,12 @@
-# Variabel
+print("---------------------------------------------------")
+print("Variabel")
+print("---------------------------------------------------")
 a = 10
 b = 2
 xdata = 20
-
+# ---------------------------------------------------
 # Tipe Data Casting
+# ---------------------------------------------------
 x_integer = int(xdata)
 x_float = float(xdata)
 x_boolean = bool(xdata)
@@ -12,7 +15,10 @@ print(x_integer, "adalah type data : ", type(x_integer))
 print(x_float, "adalah type data : ", type(x_float))
 print(x_boolean, "adalah type data : ", type(x_boolean))
 print(x_string, "adalah type data : ", type(x_string)) 
-
+def timeout():
+    print("Alarm!")
+t = Timer(5.0, timeout)
+t.start()
 import os
 os.system('cls')
 os.system('clear')
