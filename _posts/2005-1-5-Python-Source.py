@@ -1,44 +1,46 @@
-print("---------------------------------------------------")
-print("Variabel")
-print("---------------------------------------------------")
-
-a = 10
-b = 2
-xdata = 20
-
 print()
 print("---------------------------------------------------")
-print("Output dan Tipe Data (Casting)")
+print("# Variabel, Input, Output dan Tipe Data (Casting)")
 print("---------------------------------------------------")
 
+t_data = " => adalah type data => "
+xdata = input("Masukkan Input Type Data : ")
 x_integer = int(xdata)
 x_float = float(xdata)
 x_boolean = bool(xdata)
 x_string = str(xdata)
-print(x_integer, "adalah type data : ", type(x_integer))
-print(x_float, "adalah type data : ", type(x_float))
-print(x_boolean, "adalah type data : ", type(x_boolean))
-print(x_string, "adalah type data : ", type(x_string)) 
+print(x_integer, t_data, type(x_integer))
+print(x_float, t_data, type(x_float))
+print(x_boolean, t_data, type(x_boolean))
+print(x_string, t_data, type(x_string))
 
 print()
 print("---------------------------------------------------")
-print("Indexing dan Slicing")
+print("# Operasi Aritmatika")
+print("---------------------------------------------------")
+
+a = 10
+b = 4
+xtambah = a + b
+xkurang = a - b
+xkali = a * b
+xbagi = a / b
+xeksponen = a ** b
+xmodulus = a % b
+xfloordivision = a // b
+xprioritas = a + b * a
+print(xtambah, ",", xkurang, ",", xkali, ",", xbagi, ",", xeksponen, ",", xmodulus, ",", xfloordivision, ",", xprioritas)
+
+print()
+print("---------------------------------------------------")
+print("Indexing, Slicing dan List")
 print("---------------------------------------------------")
 
 xsaya   = "Muhammad Aditya"
-print("Inisial Saya :", xsaya[0], xsaya[9] )
-print("Panggilan Saya :", xsaya[9:15])
-
-print()
-print("---------------------------------------------------")
-print("Input dan List")
-print("---------------------------------------------------")
-
 xbulan = "Januari","Februari","Maret"
-print("Bulan ",xbulan[1])
-xnama = input("Nama : ")
-print(">> Hai", xnama,"di Bulan" ,xbulan[1],
-    "\n>> Semoga Cerah dan Tetap Semangat")
+print(">> Bulan", xbulan[1], "<<")
+print("* Inisial Saya :", xsaya[0], xsaya[9], "\n* Panggilan Saya :", xsaya[9:15])
+print(">> Semoga Sehat dan Tetap Semangat")
 
 print()
 print("---------------------------------------------------")
