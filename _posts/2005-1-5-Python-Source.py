@@ -16,7 +16,7 @@ print(x_string, t_data, type(x_string))
 
 print()
 print("---------------------------------------------------")
-print("# Operasi Aritmatika")
+print("# Operasi Aritmatika dan Komparasi")
 print("---------------------------------------------------")
 
 a = 10
@@ -30,6 +30,9 @@ xmodulus = a % b
 xfloordivision = a // b
 xprioritas = a + b * a
 print(xtambah, ",", xkurang, ",", xkali, ",", xbagi, ",", xeksponen, ",", xmodulus, ",", xfloordivision, ",", xprioritas)
+xhasil1 = a > b
+xhasil2 = a == b
+print(xhasil1, ",", xhasil2)
 
 print()
 print("---------------------------------------------------")
