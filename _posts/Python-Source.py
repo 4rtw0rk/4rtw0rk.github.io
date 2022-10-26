@@ -16,11 +16,13 @@ print(x_string, t_data, type(x_string))
 
 print()
 print("---------------------------------------------------")
-print("# Operasi Aritmatika dan Komparasi")
+print("# Operasi Aritmatika, Komparasi dan Logika(Boolean)")
 print("---------------------------------------------------")
 
 a = 10
 b = 4
+c = True
+d = False
 xtambah = a + b
 xkurang = a - b
 xkali = a * b
@@ -29,18 +31,20 @@ xeksponen = a ** b
 xmodulus = a % b
 xfloordivision = a // b
 xprioritas = a + b * a
-print(xtambah, ",", xkurang, ",", xkali, ",", xbagi, ",", xeksponen, ",", xmodulus, ",", xfloordivision, ",", xprioritas)
+print(xtambah, ",", xkurang, ",", xkali, ",", xbagi, ",", xeksponen,
+      ",", xmodulus, ",", xfloordivision, ",", xprioritas)
 xhasil1 = a > b
 xhasil2 = a == b
-print(xhasil1, ",", xhasil2)
+xhasil3 = c and d
+print(xhasil1, ",", xhasil2, ",", xhasil3)
 
 print()
 print("---------------------------------------------------")
 print("Indexing, Slicing dan List")
 print("---------------------------------------------------")
 
-xsaya   = "Muhammad Aditya"
-xbulan = "Januari","Februari","Maret"
+xsaya = "Muhammad Aditya"
+xbulan = "Januari", "Februari", "Maret"
 print(">> Bulan", xbulan[1], "<<")
 print("* Inisial Saya :", xsaya[0], xsaya[9], "\n* Panggilan Saya :", xsaya[9:15])
 print(">> Semoga Sehat dan Tetap Semangat")
@@ -52,10 +56,10 @@ print("---------------------------------------------------")
 xorang = int(input("Masukkan Angkanya : "))
 if xorang in range(100, 900):
     print("Angkanmu Besar")
-elif xorang in range (1000, 5000):
+elif xorang in range(1000, 5000):
     print(">>", xorang, ": Angkamu Besar Sekali")
 elif xorang < 100:
-    print(">>", xorang,": Angkamu Kecil")
+    print(">>", xorang, ": Angkamu Kecil")
 else:
     print("Salah Input. Ulangi")
 
