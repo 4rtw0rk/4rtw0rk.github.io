@@ -36,7 +36,7 @@ print(xtambah, ",", xkurang, ",", xkali, ",", xbagi, ",", xeksponen,
 xhasil1 = a > b
 xhasil2 = a == b
 xhasil3 = c and d
-print(xhasil1, ",", xhasil2, ",", xhasil3)
+print(xhasil1, ",\n", xhasil2, ",\t", xhasil3)
 
 print()
 print("---------------------------------------------------")
