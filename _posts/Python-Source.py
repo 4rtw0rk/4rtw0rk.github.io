@@ -99,12 +99,12 @@ xbulan = int(input("     IBulan \t\t: "))
 xtanggal = int(input("     ITanggal \t\t: "))
 xttl = dt.date(xtahun, xbulan, xtanggal)
 xtotalday = (xday - xttl)
-xtotaltahun = xtotalday / 365
-# xsisabulan = xtotalday - (xtotaltahun.days * 365)
+xtotaltahun = xtotalday.days // 365
+xsisabulan = (xtotalday.days % 365) // 30
 # sisa_bulan = (xday - xttl) - int(xxumur * 365)
 print(f"     Hari ini \t\t: {xday}, {xday:%A}")
 print(f"     Tanggal Lahir \t: {xttl}, {xttl:%A}")
-print(f"     Umurku \t\t: {xtotaltahun.days} Tahun")
+print(f"     Umurku \t\t: {xtotaltahun} Tahun, {xsisabulan} Bulan")
 print()
 
 # # #  --- 07 / 08 --- # # #
