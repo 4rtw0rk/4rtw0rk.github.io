@@ -94,24 +94,26 @@ xlengkap = f"{xdepan}, punya uang Rp {xsaku:,}"
 print(" 05a Format \t\t", xlengkap)
 # --- 06 ---
 xday = dt.date.today()
-xtahun = int(input(" ITahun \t: "))
-xbulan = int(input(" IBulan \t: "))
-xtanggal = int(input(" ITanggal \t: "))
+xtahun = int(input(" 05b ITahun \t\t: "))
+xbulan = int(input("     IBulan \t\t: "))
+xtanggal = int(input("     ITanggal \t\t: "))
 xttl = dt.date(xtahun, xbulan, xtanggal)
 xtotalday = (xday - xttl)
 xtotaltahun = xtotalday / 365
 # xsisabulan = xtotalday - (xtotaltahun.days * 365)
 # sisa_bulan = (xday - xttl) - int(xxumur * 365)
-print(f" Hari ini \t\t: {xday}, {xday:%A}")
-print(f" Tanggal Lahir \t: {xttl}, {xttl:%A}")
-print(f" Umurku \t\t: {xtotaltahun.days} Tahun")
+print(f"     Hari ini \t\t: {xday}, {xday:%A}")
+print(f"     Tanggal Lahir \t: {xttl}, {xttl:%A}")
+print(f"     Umurku \t\t: {xtotaltahun.days} Tahun")
+print()
 
 # # #  --- 07 / 08 --- # # #
 print("%"*60)
-print(" 07")
-print(" 08")
+print(" 07 Abc")
+print(" 08 Abc")
 print("%"*60)
-
+# --- Pr 05 --
+print("-"*60)
 
 """
 # KE 05
