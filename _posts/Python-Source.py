@@ -1,10 +1,10 @@
-# --- Title ---
+# # #  --- 01 / 02 --- # # #
 print()
 print("%"*60)
 print(" 01 General, Variabel, Input, Output, Tipe Data Casting")
 print(" 02 Operasi Penugasan, Aritmatika, Perbandingan, Logika")
 print("%"*60)
-# --- Teori ---
+# --- Tr 01/02 ---
 print(" 01a variabel, \\, \\t, \\n, \\b")
 print(" 01b input(), print(), type() ")
 print(" 01c int(), float(), bool(), str()")
@@ -19,7 +19,6 @@ b = 4
 c = True
 d = False
 t_text = "\tis type\t"
-
 print(" 01a Variabel \ta =", a)
 print(" 01a Variabel \tb =", b)
 xdata = input(" 01b Masukkan Input Type Data : ")
@@ -39,35 +38,39 @@ print(" 02b Op. Aritmatika \ta * b\t\t=", xkali)
 print(" 02x Op. Prioritas \t\ta + b * a   =", xprioritas)
 print(" 02c Op. Perbandingan \ta == b\t\t=", xhasil2)
 print(" 02d Op. Logika \t\tc dan d\t\t=", xhasil3)
-# KE 03
 print()
-print("="*60)
-print("03 Indexing, Slicing dan List")
-print("="*60)
-print("xvar[xindex], xvar[xslincing], xvar[xlist]")
+
+
+# # #  --- 03 / 04 --- # # #
+print("%"*60)
+print(" 03 Indexing, Slicing dan List")
+print(" 04 Hitung, Minimum, Maxsimum, Uppercase, Lowercase dan Method")
+print("%"*60)
+# --- Tr 03 / 04 ---
+print(" 03a Indexing \t\t\txvar[xindex]")
+print(" 03b Slincing \t\t\txvar[xslincing]")
+print(" 03c List \t\t\t\txvar[xlist]")
+print(" 04a Hitung \t\t\tlen(xvar), xvar.count()")
+print(" 04b Minimal Maximal \tmin(), max()")
 print("-"*60)
+# --- Pr 03 ---
 xsaya = "Muhammad Aditya"
 xbulan = "Januari", "Februari", "Maret"
-print(">> Bulan", xbulan[1], "<<")
-print("* Inisial Saya :", xsaya[0], xsaya[9])
-print("* Panggilan Saya :", xsaya[9:15])
-print(">> Semoga Sehat dan Tetap Semangat")
-# KE 04
-print()
-print("="*60)
-print("04 Hitung, Minimum, Maxsimum, Uppercase, Lowercase dan Method")
-print("="*60)
-print("len(xvar)")
-print("xvar.count(), ")
-print("-"*60)
 h = "Saya Adalah Pahlawan Super"
+print(" 03a Indexing \t\tInisial Saya \t:", xsaya[0], xsaya[9])
+print(" 03b Slincing \t\tPanggilan Saya \t:", xsaya[9:15])
+print(" 03c list \t\t\tBulan \t\t\t:", xbulan[1])
+# --- Pr 04 ---
 xhitung = len(h)
 xh_huruf = h.count("a")
 xmin = min(h)
 xmax = max(h)
-print("Panjang Huruf :", xhitung)
-print("Banyak Huruf a :", xh_huruf)
-print("Minimum Variabel :", xmin)
+print(" 04a Hitung Kotak \t\t:", xhitung)
+print(" 04a Hitung Huruf a \t:", xh_huruf)
+print(" 04b Min & Max Var \t\t:", xmin, "&", xmax)
+print("-"*60)
+
+
 # KE 05
 print()
 print("="*60)
