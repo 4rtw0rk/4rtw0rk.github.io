@@ -44,30 +44,38 @@ print()
 # # #  --- 03 / 04 --- # # #
 print("%"*60)
 print(" 03 Indexing, Slicing dan List")
-print(" 04 Hitung, Minimum, Maxsimum, Uppercase, Lowercase dan Method")
+print(" 04 Hitung, Minimum, Maxsimum, Method, Uppercase, Lowercase")
 print("%"*60)
 # --- Tr 03 / 04 ---
-print(" 03a Indexing \t\t\txvar[xindex]")
-print(" 03b Slincing \t\t\txvar[xslincing]")
-print(" 03c List \t\t\t\txvar[xlist]")
-print(" 04a Hitung \t\t\tlen(xvar), xvar.count()")
-print(" 04b Minimal Maximal \tmin(), max()")
+print(" 03a Indexing \t\t\t\txvar[xindex]")
+print(" 03b Slincing \t\t\t\txvar[xslincing]")
+print(" 03c List \t\t\t\t\txvar[xlist]")
+print(" 04a Hitung \t\t\t\tlen(xvar)")
+print(" 04b Minimal & Maximal \t\tmin(), max()")
+print(" 04c Method \t\t\t\txvar.count()")
+print(" 04d Uppercase & Lowercase \tx.upper(), xlower()")
 print("-"*60)
 # --- Pr 03 ---
-xsaya = "Muhammad Aditya"
+xsaya = "Muhammad", "Aditya"
 xbulan = "Januari", "Februari", "Maret"
 h = "Saya Adalah Pahlawan Super"
-print(" 03a Indexing \t\tInisial Saya \t:", xsaya[0], xsaya[9])
-print(" 03b Slincing \t\tPanggilan Saya \t:", xsaya[9:15])
+xinisial1 = xsaya[0]
+xinisial2 = xsaya[1]
+print(" 03a Indexing \t\tInisial Saya \t:", xinisial1[0], xinisial2[0])
+print(" 03b Slincing \t\tPanggilan Saya \t:", xinisial2)
 print(" 03c list \t\t\tBulan \t\t\t:", xbulan[1])
 # --- Pr 04 ---
 xhitung = len(h)
 xh_huruf = h.count("a")
 xmin = min(h)
 xmax = max(h)
+xedit = xsaya[1]
+xupper = xedit.upper()
+xlower = xedit.lower()
 print(" 04a Hitung Kotak \t\t:", xhitung)
-print(" 04a Hitung Huruf a \t:", xh_huruf)
 print(" 04b Min & Max Var \t\t:", xmin, "&", xmax)
+print(" 04c Method Huruf a \t:", xh_huruf)
+print(" 04d Uppercase & Lowercase \t:", xupper, xlower)
 print("-"*60)
 
 
