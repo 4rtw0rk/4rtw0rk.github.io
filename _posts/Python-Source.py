@@ -1,3 +1,4 @@
+import datetime as dt
 # # #  --- 01 / 02 --- # # #
 print()
 print("%"*60)
@@ -21,7 +22,8 @@ d = False
 t_text = "\tis type\t"
 print(" 01a Variabel \ta =", a)
 print(" 01a Variabel \tb =", b)
-xdata = input(" 01b Masukkan Input Type Data : ")
+print(" 01b Masukkan Input Type Data : 45")
+xdata = 45
 x_float = float(xdata)
 x_boolean = bool(xdata)
 print(" 01c TD. Casting \tfloat() =>", x_float, t_text, type(x_float))
@@ -39,7 +41,6 @@ print(" 02x Op. Prioritas \t\ta + b * a   =", xprioritas)
 print(" 02c Op. Perbandingan \ta == b\t\t=", xhasil2)
 print(" 02d Op. Logika \t\tc dan d\t\t=", xhasil3)
 print()
-
 
 # # #  --- 03 / 04 --- # # #
 print("%"*60)
@@ -76,9 +77,40 @@ print(" 04a Hitung Kotak \t\t:", xhitung)
 print(" 04b Min & Max Var \t\t:", xmin, "&", xmax)
 print(" 04c Method Huruf a \t:", xh_huruf)
 print(" 04d Uppercase & Lowercase \t:", xupper, xlower)
+
+# # #  --- 05 / 06 --- # # #
+print("%"*60)
+print(" 05 Format String")
+print(" 06 Date Time")
+print("%"*60)
+# --- Tr 05 / 06 ---
+print(' 05 Format String \tf"{xvar:xordo}xstr" :+, :1% :, :. :.3f :>4')
+print(" 06 dt.date.today()")
+# --- Pr 05 --
 print("-"*60)
+xdepan = "Aditya"
+xsaku = 5000000
+xlengkap = f"{xdepan}, punya uang Rp {xsaku:,}"
+print(" 05a Format \t\t", xlengkap)
+# --- 06 ---
+xday = dt.date.today()
+xtahun = int(input(" ITahun :"))
+xbulan = int(input(" IBulan :"))
+xtanggal = int(input(" ITanggal :"))
+xttl = dt.date(xtahun, xbulan, xtanggal)
+xxumur = (xday - xttl) / 365
+print(f" Hari ini \t\t: {xday}, {xday:%A}")
+print(f" Tanggal Lahir \t: {xttl}, {xttl:%A}")
+print(f" Umurku \t\t\t: {xxumur.days} Tahun")
+
+# # #  --- 07 / 08 --- # # #
+print("%"*60)
+print(" 07")
+print(" 08")
+print("%"*60)
 
 
+"""
 # KE 05
 print()
 print("="*60)
@@ -101,3 +133,4 @@ print("="*60)
 xwarna = "Pink", "Hitam", "Cokelat"
 for xdaftar in range(len(xwarna)):
     print("Saya Tidak Suka Warna", xwarna[xdaftar])
+"""
