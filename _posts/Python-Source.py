@@ -5,7 +5,7 @@ print(" 01 General, Variabel, Input, Output, Tipe Data Casting")
 print(" 02 Operasi Penugasan, Aritmatika, Perbandingan, Logika")
 print("%"*60)
 # --- Teori ---
-print(" 01a \\, \\t, \\n, \\b")
+print(" 01a variabel, \\, \\t, \\n, \\b")
 print(" 01b input(), print(), type() ")
 print(" 01c int(), float(), bool(), str()")
 print(" 02a Op. Penugasan \t\t=, +=, -=, *=, /=, **=, %=")
@@ -14,37 +14,31 @@ print(" 02c Op. Perbandingan \t<, >, >=, <=, ==, !=")
 print(" 02d Op. Logika \t\tnot, or, and xor")
 # --- Pr 01 ---
 print("="*60)
-t_text = "\tis type\t"
-xdata = input(" 01b Masukkan Input Type Data : ")
-x_integer = int(xdata)
-x_float = float(xdata)
-x_boolean = bool(xdata)
-x_string = str(xdata)
-print(" 01c int()\t =>", x_integer, "\t", t_text, type(x_integer))
-print(" 01c float() =>", x_float, t_text, type(x_float))
-print(" 01c bool()\t =>", x_boolean, t_text, type(x_boolean),
-      "\n", "01c str()\t =>", x_string, "\t", t_text, type(x_string))
-# --- Pr 02 ---
 a = 10
 b = 4
 c = True
 d = False
-xtambah = " " + str(a + b)
-xkurang = a - b
-xkali = a * b
-xbagi = a / b
-xeksponen = a ** b
-xmodulus = a % b
-xfloordivision = a // b
-xprioritas = a + b * a
+t_text = "\tis type\t"
 
+print(" 01a Variabel \ta =", a)
+print(" 01a Variabel \tb =", b)
+xdata = input(" 01b Masukkan Input Type Data : ")
+x_float = float(xdata)
+x_boolean = bool(xdata)
+print(" 01c TD. Casting \tfloat() =>", x_float, t_text, type(x_float))
+print(" 01c TD. Casting \tbool() =>", x_boolean, "\t", t_text, type(x_boolean))
+# --- Pr 02 ---
 print("-"*60)
-print(xtambah, ",", xkurang, ",", xkali, ",", xbagi, ",", xeksponen,
-      ",", xmodulus, ",", xfloordivision, ",", xprioritas)
-xhasil1 = " " + str(a > b)
+xassign = a = b
+xkali = a * b
+xprioritas = a + b * a
 xhasil2 = a == b
 xhasil3 = c and d
-print(xhasil1, xhasil2, xhasil3)
+print(" 02a Op. Penugasan \t\ta = b\t\t=", xassign)
+print(" 02b Op. Aritmatika \ta * b\t\t=", xkali)
+print(" 02x Op. Prioritas \t\ta + b * a   =", xprioritas)
+print(" 02c Op. Perbandingan \ta == b\t\t=", xhasil2)
+print(" 02d Op. Logika \t\tc dan d\t\t=", xhasil3)
 # KE 03
 print()
 print("="*60)
