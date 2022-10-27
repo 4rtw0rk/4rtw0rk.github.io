@@ -1,7 +1,7 @@
 print()
-print("---------------------------------------------------")
+print("-"*51)
 print("# Variabel, Input, Output dan Tipe Data (Casting)")
-print("---------------------------------------------------")
+print("-"*51)
 
 t_data = " => adalah type data => "
 xdata = input("Masukkan Input Type Data : ")
@@ -16,7 +16,7 @@ print(x_string, t_data, type(x_string))
 
 print()
 print("---------------------------------------------------")
-print("# Operasi Aritmatika, Komparasi dan Logika(Boolean)")
+print("# Operasi Aritmatika, Komparasi, Logika(Boolean) dan General")
 print("---------------------------------------------------")
 
 a = 10
@@ -48,6 +48,19 @@ xbulan = "Januari", "Februari", "Maret"
 print(">> Bulan", xbulan[1], "<<")
 print("* Inisial Saya :", xsaya[0], xsaya[9], "\n* Panggilan Saya :", xsaya[9:15])
 print(">> Semoga Sehat dan Tetap Semangat")
+
+print()
+print("="*60)
+print("# Hitung, Minimum, Maxsimum, Uppercase, Lowercase dan Method")
+print("="*60)
+print("-"*60)
+
+h = "Saya Adalah Pahlawan Super"
+xhitung = len(h)
+xh_huruf = h.count("a")
+print("Panjang Huruf :", xhitung)
+print("Banyak Huruf a :", xh_huruf)
+print("")
 
 print()
 print("---------------------------------------------------")
