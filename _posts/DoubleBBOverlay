@@ -1,0 +1,81 @@
+// This source code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// © CYBERNET01
+
+//@version=5
+indicator(title = "Overlay MTF [EMA, BB, MACD]", overlay = true)
+
+/////////// BB ///////////
+
+[middle, upper, lower] = ta.bb(close, 400, 2)
+plot(upper, color=color.gray)
+plot(lower, color=color.gray)
+
+xbb = input(close, title = "Middle Bands", group = "= Bollinger Bands =")
+
+/////////// EMA MTF ///////////
+
+//input
+xlenght1 = input.int(title = "Ema1 HTF", defval = 216, group="= Moving Average High Timeframe =")
+//xlenght2 = input.int(title = "Ema2 HTF", defval = 288, group="= Moving Average High Timeframe =")
+xlenght3 = input.int(title = "Ema3", defval = 9, group="= Moving Average Current Timeframe =")
+xlenght4 = input.int(title = "Ema4", defval = 12, group="= Moving Average Current Timeframe =")
+xlenght5 = input.int(title = "Ema5", defval = 1, group="= Moving Average Current Timeframe =")
+
+//rumus 
+xema1 = ta.ema(close, xlenght1)
+//xema2 = ta.ema(close, xlenght2)
+xema3 = ta.ema(close, xlenght3)
+xema4 = ta.ema(close, xlenght4)
+xema5 = ta.ema(close, xlenght5)
+
+//output
+plotema1 = plot(xema1, color=color.blue, title="Ema1 MTF")
+//plotmid1 = plot(xema2, color=color.orange, title="Middle MTF")
+plotmid1 = plot(middle, color=color.orange, title="Ema2 MTF")
+plotema3 = plot(xema3, color=color.green, title="Ema3")
+plotema4 = plot(xema4, color=color.red, title="Ema4")
+plotema5 = plot(xema5, color=color.white, title="Ema5")
+fill(plotema1, plotmid1, xema1 > middle ? color.new(color.blue, 90) : color.new(color.orange, 90), title="Background High Timeframe")
+fill(plotema3, plotema4, xema3 > xema4 ? color.new(color.green, 90) : color.new(color.red, 90), title="Background High Timeframe")
+
+
+
+
+
+
+//xtimeframe = input.timeframe(title = "Timeframe", defval = "D", group="=== Ema MTF ===")
+//xhtfema1 = request.security(syminfo.tickerid, xtimeframe, xema1[1], gaps = barmerge.gaps_on, lookahead = barmerge.lookahead_on)
+//xhtfema2 = request.security(syminfo.tickerid, xtimeframe, xema2[1], gaps = barmerge.gaps_on, lookahead = barmerge.lookahead_on)
+
+
+
+///// MACD OVERLAY ////
+// Getting inputs
+MACD_fast_length = input(title="MACD Fast Length",  defval=288)
+MACD_slow_length = input(title="MACD Slow Length",  defval=624)
+MACD_src = input(title="MACD Source", defval=close)
+MACD_signal_length = input(title="MACD Signal Smoothing",  defval = 216)
+MACD_sma_source = input(title="MACD Simple MA(Oscillator)",  defval=false)
+MACD_sma_signal = input(title="MACD Simple MA(Signal Line)",  defval=false)
+MACD_overlay= input(title="MACD Plot Graph Overlay",  defval=false)
+
+// Plot colors
+col_grow_above = #26A69A
+col_grow_below = #FFCDD2
+col_fall_above = #B2DFDB
+col_fall_below = #EF5350
+col_macd = #0094ff
+col_signal = #ff6a00
+
+// Calculating
+MACD_fast_ma = MACD_sma_source ? ta.sma(MACD_src, MACD_fast_length) : ta.ema(MACD_src, MACD_fast_length)
+MACD_slow_ma = MACD_sma_source ? ta.sma(MACD_src, MACD_slow_length) : ta.ema(MACD_src, MACD_slow_length)
+MACD_macd = MACD_fast_ma - MACD_slow_ma
+MACD_signal = MACD_sma_signal ? ta.sma(MACD_macd, MACD_signal_length) : ta.ema(MACD_macd, MACD_signal_length)
+MACD_hist = MACD_macd - MACD_signal
+
+macd_LsigCross = ta.crossover(MACD_macd, MACD_signal)
+macd_SsigCross = ta.crossunder(MACD_macd, MACD_signal)
+macd_sigCross = macd_LsigCross or macd_SsigCross
+//plotchar(macd_sigCross, title="MACD SigCross", char="x", location = location.top, color= macd_LsigCross ? green:red, transp=5,  text="MACD SigCross", textcolor=macd_LsigCross ? green:red)
+bgcolor( MACD_macd > MACD_signal ? color.new(color.blue, 90) : color.new(color.orange, 90), title="Bgcolor MACD")

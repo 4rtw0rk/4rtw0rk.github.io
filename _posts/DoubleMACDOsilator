@@ -1,0 +1,28 @@
+//@version=5
+indicator("Osilator MTF [MACD]")
+xline = 0
+xfasthtf = input(defval = 288, title = "FastHtf ", group = "High Timeframe")
+xslowhtf = input(defval = 624, title = "SlowHtf ", group = "High Timeframe")
+xsignalhtf = input(defval = 216, title = "SignalHtf ", group = "High Timeframe")
+xfast = input(defval = 12, title = "Fast", group = "Current Timeframe")
+xslow = input(defval = 26, title = "Slow", group = "Current Timeframe")
+xsignal = input(defval = 9, title = "Signal ", group = "Current Timeframe")
+
+fastMAhtf = ta.ema(close, xfasthtf)
+slowMAhtf = ta.ema(close, xslowhtf)
+macdhtf = fastMAhtf - slowMAhtf
+signalhtf = ta.ema(macdhtf, xsignalhtf)
+fastMA = ta.ema(close, xfast)
+slowMA = ta.ema(close, xslow)
+macd = fastMA - slowMA
+signal = ta.ema(macd, xsignal)
+
+
+plot(macdhtf, color = color.blue, title ="Fast Htf Ema")
+plot(signalhtf, color = color.orange, title ="Slow Htf Ema")
+plot(macd, color = color.green, title ="Fast Ema")
+plot(signal, color = color.red, title ="Slow Ema")
+plot(xline, color = color.gray, title = "Zero Line")
+
+barcolor( macd > signal ? color.new(color.green, 50) : color.new(color.red, 50), title="Bar Color MACD")
+bgcolor( macdhtf > signalhtf ? color.new(color.blue, 90) : color.new(color.orange, 90), title="Background Color MACD")
